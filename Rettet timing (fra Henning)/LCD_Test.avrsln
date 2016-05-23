@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "LCD_Test", "LCD_Test\LCD_Test.avrgccproj", "{DCD8760A-A0F2-4545-9AC0-8D9318EDC5BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD8760A-A0F2-4545-9AC0-8D9318EDC5BE}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCD8760A-A0F2-4545-9AC0-8D9318EDC5BE}.Debug|AVR.Build.0 = Debug|AVR
+		{DCD8760A-A0F2-4545-9AC0-8D9318EDC5BE}.Release|AVR.ActiveCfg = Release|AVR
+		{DCD8760A-A0F2-4545-9AC0-8D9318EDC5BE}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
