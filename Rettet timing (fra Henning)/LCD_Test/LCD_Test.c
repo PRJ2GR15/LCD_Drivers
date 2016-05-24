@@ -78,7 +78,6 @@ const unsigned char minor_aa[8]= {
 int main()
 {
 char SRAMstring[] = "String in SRAM";
-int i;
 
   // Initialize the display
   LCDInit();
@@ -158,21 +157,5 @@ int i;
     // Shift the display text 1 position to the left
     LCDShiftLeft();
     _delay_ms(1000);
-
-    // No blinking characters or cursor
-    LCDOnOffControl(0,0);
-    // Display clear
-    LCDClear();
-    // Testing LCDDispInteger()
-    for ( i = 0; i < 10; i++ )
-    {
-      // Goto line 1, 5.character
-      LCDGotoXY(4,0);
-      LCDDispInteger(i-30000);
-      // Goto line 2, 5.character
-      LCDGotoXY(4,1);
-      LCDDispInteger(i+30000);
-      _delay_ms(500);
-    }
   }
 }

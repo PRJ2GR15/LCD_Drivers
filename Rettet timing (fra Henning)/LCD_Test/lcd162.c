@@ -50,8 +50,7 @@ static void E_High()
   _NOP();
   _NOP();
   _NOP();
-  _NOP();
-  _NOP();
+
 }
 
 static void E_Low()
@@ -61,13 +60,7 @@ static void E_Low()
   // Enable cycle time : Min 500 ns
   _NOP();
   _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
+
 }
 
 static void waitBusy()

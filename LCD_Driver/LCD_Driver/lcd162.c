@@ -20,7 +20,7 @@
 -----------------------------------------------------------------------*/
 #include <avr/io.h>
 #define F_CPU 16000000
-#include <util/delay.h>
+#include <avr/delay.h>
 // Enabling us to use macro _NOP() to insert the NOP instruction
 #include <avr/cpufunc.h>
 #include "lcd162.h"
@@ -50,8 +50,6 @@ static void E_High()
   _NOP();
   _NOP();
   _NOP();
-  _NOP();
-  _NOP();
 }
 
 static void E_Low()
@@ -59,13 +57,6 @@ static void E_Low()
   // Set the E pin low
   PORT_lcd &= ~(1<<E);
   // Enable cycle time : Min 500 ns
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
-  _NOP();
   _NOP();
   _NOP();
 }
